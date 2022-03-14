@@ -16,6 +16,10 @@ const app = new Vue ({
 
             seed: ['BEANS' , 'CASSAVA', 'FORAGES'],
 
+            cardReceived: 'RECEIVED:',
+
+            callToAction: 'Explore clicking dots',
+
         },
 
         spanish: {
@@ -28,273 +32,1817 @@ const app = new Vue ({
 
             seed: ['FRÍJOLE' , 'YUCA', 'FORRAGES'],
 
+            cardReceived: 'HA RECIBIDO:',
+
+            callToAction: 'Explora haciendo clic en los puntos',
+
         },
 
         countries: [
 
-            /* venezuela */
+            /* AUSTRALIA */
             {
-                name: 'VENEZUELA',
+                name: 'AUSTRALIA',
                 
-                ref: 'venezuela',
+                ref: 'AUSTRALIA',
 
                 rightContent: {
 
-                    beens: '',
-                    cassava: '244',
-                    forages: '2006',
+                    beens: true,
+                    cassava: true,
+                    forages: true,
                 },
             },
 
-            /* united state */
+            /* FIJI */
             {
-                name: 'UNITED STATE',
+                name: 'FIJI',
                 
-                ref: 'united_state',
+                ref: 'FIJI',
 
                 rightContent: {
 
-                    beens: '1859',
-                    cassava: '',
-                    forages: '',
+                    beens: false,
+                    cassava: true,
+                    forages: true,
                 },
             },
 
-            /* turkey */
+            /* NEW_CALEDONIA */
+            {
+                name: 'NEW CALEDONIA',
+                
+                ref: 'NEW_CALEDONIA',
+
+                rightContent: {
+
+                    beens: false,
+                    cassava: false,
+                    forages: true,
+                },
+            },
+
+            /* NEW_ZEALAND */
+            {
+                name: 'NEW ZEALAND',
+                
+                ref: 'NEW_ZEALAND',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: false,
+                    forages: true,
+                },
+            },
+
+            /* PHILIPPINES */
+            {
+                name: 'PHILIPPINES',
+                
+                ref: 'PHILIPPINES',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* TIMOR_LESTE */
+            {
+                name: 'TIMOR LESTE',
+                
+                ref: 'TIMOR_LESTE',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: false,
+                },
+            },
+
+            /* TONGA */
+            {
+                name: 'TONGA',
+                
+                ref: 'TONGA',
+
+                rightContent: {
+
+                    beens: false,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* VANUATU */
+            {
+                name: 'VANUATU',
+                
+                ref: 'VANUATU',
+
+                rightContent: {
+
+                    beens: false,
+                    cassava: true,
+                    forages: false,
+                },
+            },
+
+            /* SAMOA */
+            {
+                name: 'SAMOA',
+                
+                ref: 'SAMOA',
+
+                rightContent: {
+
+                    beens: false,
+                    cassava: true,
+                    forages: false,
+                },
+            },
+
+            /* SAUDI_ARABIA */
+            {
+                name: 'SAUDI ARABIA',
+                
+                ref: 'SAUDI_ARABIA',
+
+                rightContent: {
+
+                    beens: false,
+                    cassava: true,
+                    forages: false,
+                },
+            },
+
+            /* IRAN */
+            {
+                name: 'IRAN',
+                
+                ref: 'IRAN',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* TURKEY */
             {
                 name: 'TURKEY',
                 
-                ref: 'turkey',
+                ref: 'TURKEY',
 
                 rightContent: {
 
-                    beens: '1113',
-                    cassava: '',
-                    forages: '',
+                    beens: true,
+                    cassava: true,
+                    forages: true,
                 },
             },
 
-            /* thailand */
+            /* AUSTRIA */
             {
-                name: 'THAILAND',
+                name: 'AUSTRIA',
                 
-                ref: 'thailand',
+                ref: 'AUSTRIA',
 
                 rightContent: {
 
-                    beens: '',
-                    cassava: '',
-                    forages: '990',
+                    beens: true,
+                    cassava: true,
+                    forages: false,
                 },
             },
 
-            /* peru */
+            /* BELGIUM */
             {
-                name: 'PERÙ',
+                name: 'BELGIUM',
                 
-                ref: 'peru',
+                ref: 'BELGIUM',
 
                 rightContent: {
 
-                    beens: '3794',
-                    cassava: '412',
-                    forages: '',
+                    beens: true,
+                    cassava: true,
+                    forages: true,
                 },
             },
 
-            /* paraguay */
+            /* BULGARIA */
             {
-                name: 'PARAGUAY',
+                name: 'BULGARIA',
                 
-                ref: 'paraguay',
+                ref: 'BULGARIA',
 
                 rightContent: {
 
-                    beens: '',
-                    cassava: '203',
-                    forages: '',
+                    beens: true,
+                    cassava: false,
+                    forages: true,
                 },
             },
 
-            /* panama */
+            /* BELARUES */
             {
-                name: 'PANAMA',
+                name: 'BELARUES',
                 
-                ref: 'panama',
+                ref: 'BELARUES',
 
                 rightContent: {
 
-                    beens: '',
-                    cassava: '',
-                    forages: '608',
+                    beens: true,
+                    cassava: false,
+                    forages: false,
                 },
             },
 
-            /* mexico */
+            /* SWITZERLAND */
             {
-                name: 'MEXICO',
+                name: 'SWITZERLAND',
                 
-                ref: 'mexico',
+                ref: 'SWITZERLAND',
 
                 rightContent: {
 
-                    beens: '6224',
-                    cassava: '110',
-                    forages: '689',
+                    beens: true,
+                    cassava: true,
+                    forages: true,
                 },
             },
 
-            /* malawi */
+            /* CZECHOSLOVAKIA */
             {
-                name: 'MALAWI',
+                name: 'CZECHOSLOVAKIA',
                 
-                ref: 'malawi',
+                ref: 'CZECHOSLOVAKIA',
 
                 rightContent: {
 
-                    beens: '1008',
-                    cassava: '',
-                    forages: '',
+                    beens: true,
+                    cassava: false,
+                    forages: false,
                 },
             },
 
-            /* kenya */
+            /* CYPRUS */
             {
-                name: 'KENYA',
+                name: 'CYPRUS',
                 
-                ref: 'kenya',
+                ref: 'CYPRUS',
 
                 rightContent: {
 
-                    beens: '',
-                    cassava: '',
-                    forages: '447',
+                    beens: true,
+                    cassava: false,
+                    forages: false,
                 },
             },
 
-            /* indonesia */
+            /* GERMANY */
+            {
+                name: 'GERMANY',
+                
+                ref: 'GERMANY',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* DENMARK */
+            {
+                name: 'DENMARK',
+                
+                ref: 'DENMARK',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* SPAIN */
+            {
+                name: 'SPAIN',
+                
+                ref: 'SPAIN',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* ESTONIA */
+            {
+                name: 'ESTONIA',
+                
+                ref: 'ESTONIA',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* FRANCE */
+            {
+                name: 'FRANCE',
+                
+                ref: 'FRANCE',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* UNITED_KINGDOM */
+            {
+                name: 'UNITED KINGDOM',
+                
+                ref: 'UNITED_KINGDOM',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* GREECE */
+            {
+                name: 'GREECE',
+                
+                ref: 'GREECE',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: false,
+                    forages: false,
+                },
+            },
+
+            /* CROATIA */
+            {
+                name: 'CROATIA',
+                
+                ref: 'CROATIA',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: false,
+                    forages: false,
+                },
+            },
+
+            /* HUNGARY */
+            {
+                name: 'HUNGARY',
+                
+                ref: 'HUNGARY',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: false,
+                    forages: true,
+                },
+            },
+
+            /* IRELAND */
+            {
+                name: 'IRELAND',
+                
+                ref: 'IRELAND',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: false,
+                    forages: true,
+                },
+            },
+
+            /* ITALY */
+            {
+                name: 'ITALY',
+                
+                ref: 'ITALY',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* NETHERLANDS */
+            {
+                name: 'NETHERLANDS',
+                
+                ref: 'NETHERLANDS',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* POLAND */
+            {
+                name: 'POLAND',
+                
+                ref: 'POLAND',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: false,
+                    forages: true,
+                },
+            },
+
+            /* PORTUGAL */
+            {
+                name: 'PORTUGAL',
+                
+                ref: 'PORTUGAL',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: false,
+                    forages: true,
+                },
+            },
+
+            /* SLOVAKIA */
+            {
+                name: 'SLOVAKIA',
+                
+                ref: 'SLOVAKIA',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: false,
+                    forages: false,
+                },
+            },
+
+            /* SLOVENIA */
+            {
+                name: 'SLOVENIA',
+                
+                ref: 'SLOVENIA',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: false,
+                    forages: false,
+                },
+            },
+
+            /* SWEDEN */
+            {
+                name: 'SWEDEN',
+                
+                ref: 'SWEDEN',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* INDONESIA */
             {
                 name: 'INDONESIA',
                 
-                ref: 'indonesia',
+                ref: 'INDONESIA',
 
                 rightContent: {
 
-                    beens: '',
-                    cassava: '247',
-                    forages: '1129',
+                    beens: true,
+                    cassava: true,
+                    forages: true,
                 },
             },
 
-            /* honduras */
+            /* RUSSIA */
             {
-                name: 'HONDURAS',
+                name: 'RUSSIA',
                 
-                ref: 'honduras',
+                ref: 'RUSSIA',
 
                 rightContent: {
 
-                    beens: '',
-                    cassava: '',
-                    forages: '364',
+                    beens: false,
+                    cassava: false,
+                    forages: true,
                 },
             },
 
-            /* guatemala */
+            /* PAKISTAN */
             {
-                name: 'GUATEMALA',
+                name: 'PAKISTAN',
                 
-                ref: 'guatemala',
+                ref: 'PAKISTAN',
 
                 rightContent: {
 
-                    beens: '2850',
-                    cassava: '',
-                    forages: '',
+                    beens: true,
+                    cassava: false,
+                    forages: true,
                 },
             },
 
-            /* equador */
+            /* BANGLADESH */
             {
-                name: 'EQUADOR',
+                name: 'BANGLADESH',
                 
-                ref: 'equador',
+                ref: 'BANGLADESH',
 
                 rightContent: {
 
-                    beens: '1112',
-                    cassava: '112',
-                    forages: '',
+                    beens: true,
+                    cassava: true,
+                    forages: true,
                 },
             },
 
-            /* costa_rica */
+            /* BHUTAN */
             {
-                name: 'COSTA RICA',
+                name: 'BHUTAN',
                 
-                ref: 'costa_rica',
+                ref: 'BHUTAN',
 
                 rightContent: {
 
-                    beens: '886',
-                    cassava: '97',
-                    forages: '',
+                    beens: true,
+                    cassava: false,
+                    forages: true,
                 },
             },
 
-            /* colombia */
+            /* MYANMAR_BURMA */
             {
-                name: 'COLOMBIA,',
+                name: 'MYANMAR BURMA',
                 
-                ref: 'colombia',
+                ref: 'MYANMAR_BURMA',
 
                 rightContent: {
 
-                    beens: '3916',
-                    cassava: '2325',
-                    forages: '3955',
+                    beens: true,
+                    cassava: false,
+                    forages: false,
                 },
             },
 
-            /* brazil */
+            /* CHINA */
             {
-                name:'BRAZIL',
+                name: 'CHINA',
                 
-                ref: 'brazil',
+                ref: 'CHINA',
 
                 rightContent: {
 
-                    beens: '1745',
-                    cassava: '1557',
-                    forages: '4905',
+                    beens: true,
+                    cassava: true,
+                    forages: true,
                 },
             },
 
-            /* cali */
+            /* HONG_KONG */
             {
-                name: 'CALI',
+                name: 'HONG KONG',
                 
-                ref: 'cali',
+                ref: 'HONG_KONG',
 
                 rightContent: {
 
-                    beens: 'ooo',
-                    cassava: 'ooo',
-                    forages: 'ooo',
+                    beens: true,
+                    cassava: false,
+                    forages: true,
                 },
             },
 
-            /* argentina */
+            /* INDIA */
+            {
+                name: 'INDIA',
+                
+                ref: 'INDIA',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* JAPAN */
+            {
+                name: 'JAPAN',
+                
+                ref: 'JAPAN',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* CAMBODIA */
+            {
+                name: 'CAMBODIA',
+                
+                ref: 'CAMBODIA',
+
+                rightContent: {
+
+                    beens: false,
+                    cassava: true,
+                    forages: false,
+                },
+            },
+
+            /* KOREA_REPUBLIC_OF */
+            {
+                name: 'KOREA REPUBLIC OF',
+                
+                ref: 'KOREA_REPUBLIC_OF',
+
+                rightContent: {
+
+                    beens: false,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* LAO */
+            {
+                name: 'LAO',
+                
+                ref: 'LAO',
+
+                rightContent: {
+
+                    beens: false,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* SRI_LANKA */
+            {
+                name: 'SRI LANKA',
+                
+                ref: 'SRI_LANKA',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* MONGOLIA */
+            {
+                name: 'MONGOLIA',
+                
+                ref: 'MONGOLIA',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: false,
+                    forages: false,
+                },
+            },
+
+            /* MALAYSIA */
+            {
+                name: 'MALAYSIA',
+                
+                ref: 'MALAYSIA',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* NEPAL */
+            {
+                name: 'NEPAL',
+                
+                ref: 'NEPAL',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: false,
+                    forages: true,
+                },
+            },
+
+            /* KOREA_DEMOCR_S_REPUB */
+            {
+                name: 'KOREA DEMOCR S REPUB',
+                
+                ref: 'KOREA_DEMOCR_S_REPUB',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: false,
+                    forages: true,
+                },
+            },
+
+            /* SINGAPORE */
+            {
+                name: 'SINGAPORE',
+                
+                ref: 'SINGAPORE',
+
+                rightContent: {
+
+                    beens: false,
+                    cassava: true,
+                    forages: false,
+                },
+            },
+
+            /* THAILAND */
+            {
+                name: 'THAILAND',
+                
+                ref: 'THAILAND',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* TAIWAN_PROVINCE_OF_CHINA */
+            {
+                name: 'TAIWAN PROVINCE OF CHINA',
+                
+                ref: 'TAIWAN_PROVINCE_OF_CHINA',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: false,
+                },
+            },
+
+            /* VIETNAM */
+            {
+                name: 'VIETNAM',
+                
+                ref: 'VIETNAM',
+
+                rightContent: {
+
+                    beens: false,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* ARGENTINA */
             {
                 name: 'ARGENTINA',
                 
-                ref: 'argentina',
+                ref: 'ARGENTINA',
 
                 rightContent: {
 
-                    beens: '',
-                    cassava: '115',
-                    forages: '289',
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* PARAGUAY */
+            {
+                name: 'PARAGUAY',
+                
+                ref: 'PARAGUAY',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* COLOMBIA */
+            {
+                name: 'COLOMBIA',
+                
+                ref: 'COLOMBIA',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* BRAZIL */
+            {
+                name: 'BRAZIL',
+                
+                ref: 'BRAZIL',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* EQUADOR */
+            {
+                name: 'EQUADOR',
+                
+                ref: 'EQUADOR',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* VENEZUELA */
+            {
+                name: 'VENEZUELA',
+                
+                ref: 'VENEZUELA',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* PERU */
+            {
+                name: 'PERU',
+                
+                ref: 'PERU',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* URUGUAY */
+            {
+                name: 'URUGUAY',
+                
+                ref: 'URUGUAY',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: false,
+                    forages: true,
+                },
+            },
+
+            /* GUYANA */
+            {
+                name: 'GUYANA',
+                
+                ref: 'GUYANA',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* GUATEMALA */
+            {
+                name: 'GUATEMALA',
+                
+                ref: 'GUATEMALA',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* COSTA_RICA */
+            {
+                name: 'COSTA RICA',
+                
+                ref: 'COSTA_RICA',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* HONDURAS */
+            {
+                name: 'HONDURAS',
+                
+                ref: 'HONDURAS',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* PANAMA */
+            {
+                name: 'PANAMA',
+                
+                ref: 'PANAMA',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* MEXICO */
+            {
+                name: 'MEXICO',
+                
+                ref: 'MEXICO',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* ANTIGUA_AND_BARBUDA */
+            {
+                name: 'ANTIGUA AND BARBUDA',
+                
+                ref: 'ANTIGUA_AND_BARBUDA',
+
+                rightContent: {
+
+                    beens: false,
+                    cassava: false,
+                    forages: true,
+                },
+            },
+
+            /* BONAIRE_SAINT_EUSTATIUS_AND_SABA */
+            {
+                name: 'BONAIRE SAINT EUSTATIUS AND SABA',
+                
+                ref: 'BONAIRE_SAINT_EUSTATIUS_AND_SABA',
+
+                rightContent: {
+
+                    beens: false,
+                    cassava: false,
+                    forages: true,
+                },
+            },
+
+            /* BAHAMAS */
+            {
+                name: 'BAHAMAS',
+                
+                ref: 'BAHAMAS',
+
+                rightContent: {
+
+                    beens: false,
+                    cassava: true,
+                    forages: false,
+                },
+            },
+
+            /* BOLIVIA */
+            {
+                name: 'BOLIVIA',
+                
+                ref: 'BOLIVIA',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* BARBADOS */
+            {
+                name: 'BARBADOS',
+                
+                ref: 'BARBADOS',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* CUBA */
+            {
+                name: 'CUBA',
+                
+                ref: 'CUBA',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* DOMINICA */
+            {
+                name: 'DOMINICA',
+                
+                ref: 'DOMINICA',
+
+                rightContent: {
+
+                    beens: false,
+                    cassava: true,
+                    forages: false,
+                },
+            },
+
+            /* DOMINICAN_REPUBLIC */
+            {
+                name: 'DOMINICAN REPUBLIC',
+                
+                ref: 'DOMINICAN_REPUBLIC',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* GUADELOUPE */
+            {
+                name: 'GUADELOUPE',
+                
+                ref: 'GUADELOUPE',
+
+                rightContent: {
+
+                    beens: false,
+                    cassava: false,
+                    forages: true,
+                },
+            },
+
+            /* GRENADA */
+            {
+                name: 'GRENADA',
+                
+                ref: 'GRENADA',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: false,
+                },
+            },
+
+            /* HAITI */
+            {
+                name: 'HAITI',
+                
+                ref: 'HAITI',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* JAMAICA */
+            {
+                name: 'JAMAICA',
+                
+                ref: 'JAMAICA',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /*  SAINT_LUCIA */
+            {
+                name: ' SAINT LUCIA',
+                
+                ref: ' SAINT_LUCIA',
+
+                rightContent: {
+
+                    beens: false,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* MARTINIQUE */
+            {
+                name: 'MARTINIQUE',
+                
+                ref: 'MARTINIQUE',
+
+                rightContent: {
+
+                    beens: false,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* NICARAGUA */
+            {
+                name: 'NICARAGUA',
+                
+                ref: 'NICARAGUA',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* PUERTO_RICO */
+            {
+                name: 'PUERTO RICO',
+                
+                ref: 'PUERTO_RICO',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* EL_SALVADOR */
+            {
+                name: 'EL SALVADOR',
+                
+                ref: 'EL_SALVADOR',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* NETHERLANDS_ANTILLES */
+            {
+                name: 'NETHERLANDS ANTILLES',
+                
+                ref: 'NETHERLANDS_ANTILLES',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* TRINIDAD */
+            {
+                name: 'TRINIDAD',
+                
+                ref: 'TRINIDAD',
+
+                rightContent: {
+
+                    beens: false,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* BELIZE */
+            {
+                name: 'BELIZE',
+                
+                ref: 'BELIZE',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* UNITED_STATE */
+            {
+                name: 'UNITED STATE',
+                
+                ref: 'UNITED_STATE',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* MALAWI */
+            {
+                name: 'MALAWI',
+                
+                ref: 'MALAWI',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: false,
+                    forages: true,
+                },
+            },
+
+            /* KENYA */
+            {
+                name: 'KENYA',
+                
+                ref: 'KENYA',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* CENTRAL_AFRICAN_REPUBLIC */
+            {
+                name: 'CENTRAL AFRICAN REPUBLIC',
+                
+                ref: 'CENTRAL_AFRICAN_REPUBLIC',
+
+                rightContent: {
+
+                    beens: false,
+                    cassava: false,
+                    forages: true,
+                },
+            },
+
+            /* REPUBLIC_CONGO */
+            {
+                name: 'REPUBLIC CONGO',
+                
+                ref: 'REPUBLIC_CONGO',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: false,
+                    forages: true,
+                },
+            },
+
+            /* CAMERON */
+            {
+                name: 'CAMERON',
+                
+                ref: 'CAMERON',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: false,
+                    forages: true,
+                },
+            },
+
+            /* GABON */
+            {
+                name: 'GABON',
+                
+                ref: 'GABON',
+
+                rightContent: {
+
+                    beens: false,
+                    cassava: false,
+                    forages: true,
+                },
+            },
+
+            /* DEMOCRATIC_CONGO */
+            {
+                name: 'DEMOCRATIC CONGO',
+                
+                ref: 'DEMOCRATIC_CONGO',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: false,
+                    forages: true,
+                },
+            },
+
+            /* NIGERIA */
+            {
+                name: 'NIGERIA',
+                
+                ref: 'NIGERIA',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* UGANDA */
+            {
+                name: 'UGANDA',
+                
+                ref: 'UGANDA',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* RWAND */
+            {
+                name: 'RWAND',
+                
+                ref: 'RWAND',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* BURUNDI */
+            {
+                name: 'BURUNDI',
+                
+                ref: 'BURUNDI',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* ETHOPIA */
+            {
+                name: 'ETHOPIA',
+                
+                ref: 'ETHOPIA',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: false,
+                    forages: true,
+                },
+            },
+
+            /* SOMALIA */
+            {
+                name: 'SOMALIA',
+                
+                ref: 'SOMALIA',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: false,
+                    forages: false,
+                },
+            },
+
+            /* SUDAN */
+            {
+                name: 'SUDAN',
+                
+                ref: 'SUDAN',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: false,
+                    forages: false,
+                },
+            },
+
+            /* EGYPT */
+            {
+                name: 'EGYPT',
+                
+                ref: 'EGYPT',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* LIBYA */
+            {
+                name: 'LIBYA',
+                
+                ref: 'LIBYA',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: false,
+                    forages: false,
+                },
+            },
+
+            /* MOROCCO */
+            {
+                name: 'MOROCCO',
+                
+                ref: 'MOROCCO',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: false,
+                    forages: true,
+                },
+            },
+
+            /* MALI */
+            {
+                name: 'MALI',
+                
+                ref: 'MALI',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: false,
+                    forages: true,
+                },
+            },
+
+            /* SENEGAL */
+            {
+                name: 'SENEGAL',
+                
+                ref: 'SENEGAL',
+
+                rightContent: {
+
+                    beens: false,
+                    cassava: false,
+                    forages: true,
+                },
+            },
+
+            /* BURKINA_FASO */
+            {
+                name: 'BURKINA FASO',
+                
+                ref: 'BURKINA_FASO',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: false,
+                    forages: true,
+                },
+            },
+
+            /* GHANA */
+            {
+                name: 'GHANA',
+                
+                ref: 'GHANA',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* GUINEA */
+            {
+                name: 'GUINEA',
+                
+                ref: 'GUINEA',
+
+                rightContent: {
+
+                    beens: false,
+                    cassava: false,
+                    forages: true,
+                },
+            },
+
+            /* IVORY */
+            {
+                name: 'IVORY',
+                
+                ref: 'IVORY',
+
+                rightContent: {
+
+                    beens: false,
+                    cassava: false,
+                    forages: true,
+                },
+            },
+
+            /* SIERRA_LEONE */
+            {
+                name: 'SIERRA LEONE',
+                
+                ref: 'SIERRA_LEONE',
+
+                rightContent: {
+
+                    beens: false,
+                    cassava: false,
+                    forages: true,
+                },
+            },
+
+            /* LIBERIA */
+            {
+                name: 'LIBERIA',
+                
+                ref: 'LIBERIA',
+
+                rightContent: {
+
+                    beens: false,
+                    cassava: false,
+                    forages: true,
+                },
+            },
+
+            /* TOGO */
+            {
+                name: 'TOGO',
+                
+                ref: 'TOGO',
+
+                rightContent: {
+
+                    beens: false,
+                    cassava: false,
+                    forages: true,
+                },
+            },
+
+            /* BENIN */
+            {
+                name: 'BENIN',
+                
+                ref: 'BENIN',
+
+                rightContent: {
+
+                    beens: false,
+                    cassava: false,
+                    forages: true,
+                },
+            },
+
+            /* TANZANIA */
+            {
+                name: 'TANZANIA',
+                
+                ref: 'TANZANIA',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* ZAMBIA */
+            {
+                name: 'ZAMBIA',
+                
+                ref: 'ZAMBIA',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: false,
+                    forages: true,
+                },
+            },
+
+            /* ZIMBAWE */
+            {
+                name: 'ZIMBAWE',
+                
+                ref: 'ZIMBAWE',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
+                },
+            },
+
+            /* BOTSWANA */
+            {
+                name: 'BOTSWANA',
+                
+                ref: 'BOTSWANA',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: false,
+                    forages: true,
+                },
+            },
+
+            /* ESWATINI */
+            {
+                name: 'ESWATINI',
+                
+                ref: 'ESWATINI',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: false,
+                },
+            },
+
+            /* LESOTHO */
+            {
+                name: 'LESOTHO',
+                
+                ref: 'LESOTHO',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: false,
+                    forages: false,
+                },
+            },
+
+            /* MADAGASCAR */
+            {
+                name: 'MADAGASCAR',
+                
+                ref: 'MADAGASCAR',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: false,
+                    forages: false,
+                },
+            },
+
+            /* MAYOTTE */
+            {
+                name: 'MAYOTTE',
+                
+                ref: 'MAYOTTE',
+
+                rightContent: {
+
+                    beens: false,
+                    cassava: true,
+                    forages: false,
+                },
+            },
+
+            /* SOUTH_AFRICA */
+            {
+                name: 'SOUTH AFRICA',
+                
+                ref: 'SOUTH_AFRICA',
+
+                rightContent: {
+
+                    beens: true,
+                    cassava: true,
+                    forages: true,
                 },
             },
         ],
@@ -305,22 +1853,43 @@ const app = new Vue ({
         this.languageLoop = this.english;
         this.languageSelected = 'english';
 
+        this.beenLoop = this.countries[0];
+
         let spanish = document.getElementById('spanish');
         spanish.classList.add('st12');
     },
     methods: {
 
         getBeen(event) {
-            // console.log(event);
-            let myBeen = event.currentTarget.id.toLowerCase();
 
-            console.log(myBeen);
+            let myBeen = event.currentTarget.id;
 
-            /* let mySearch = this.countries.filter(function(country) {
+
+            let mySearch = this.countries.filter(function(country) {
                 return country.ref == myBeen;
             });
 
-            console.log(mySearch);
+            let beans = document.getElementById('beansContainer');
+            let cassava = document.getElementById('cassavaContainer');
+            let forages = document.getElementById('foragesContainer');
+
+            if (mySearch[0].rightContent.beens == false) {
+                beans.classList.add('st35');
+            } else {
+                beans.classList.remove('st35');
+            }
+
+            if (mySearch[0].rightContent.cassava == false) {
+                cassava.classList.add('st35');
+            } else {
+                cassava.classList.remove('st35');
+            }
+
+            if (mySearch[0].rightContent.forages == false) {
+                forages.classList.add('st35');
+            } else {
+                forages.classList.remove('st35');
+            }
 
             let beenFilter = {
 
@@ -329,13 +1898,14 @@ const app = new Vue ({
                 ref: myBeen,
 
                 rightContent: {
+                    
                     beens: `${mySearch[0].rightContent.beens}`,
                     cassava: `${mySearch[0].rightContent.cassava}`,
                     forages: `${mySearch[0].rightContent.forages}`,
                 },
             }
 
-            this.beenLoop = beenFilter; */
+            this.beenLoop = beenFilter;
 
         },
 
@@ -345,8 +1915,6 @@ const app = new Vue ({
 
             let spanish = document.getElementById('spanish');
             let english = document.getElementById('english');
-
-            // console.log(language);
 
             if(language == 'spanish'){
 
